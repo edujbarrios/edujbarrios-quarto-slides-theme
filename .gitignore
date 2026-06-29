@@ -1,8 +1,8 @@
 /.quarto/
 /_site/
+/example_files/
 /.Rproj.user/
 *.html
 *.log
 *.tmp
 *.bak
-

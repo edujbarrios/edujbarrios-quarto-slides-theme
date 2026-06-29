@@ -1,0 +1,105 @@
+---
+title: "Open Source AI Systems"
+subtitle: "A branded Quarto starter deck"
+author: "Eduardo J. Barrios"
+date: "2026-06-29"
+format:
+  edujbarrios-revealjs:
+    slide-number: c/t
+    show-slide-number: all
+    transition: fade
+    background-transition: fade
+    code-copy: true
+---
+
+## Why This Theme?
+
+::: {.eyebrow}
+edujbarrios.com inspired
+:::
+
+This deck turns the site branding into a reusable **open-source Quarto theme**:
+dark surfaces, <span class="accent">turquoise signals</span>,
+<span class="violet">violet depth</span>, and
+<span class="orange">warm highlights</span>.
+
+::: {.tag-list}
+::: {.tag}
+Revealjs
+:::
+::: {.tag}
+Quarto
+:::
+::: {.tag}
+MIT
+:::
+::: {.tag}
+Open Source
+:::
+:::
+
+## Project Snapshot
+
+::: {.three-column}
+::: {.metric}
+<span class="value">10+</span>
+<span class="label">AI projects</span>
+:::
+
+::: {.metric}
+<span class="value">3+</span>
+<span class="label">LLM systems</span>
+:::
+
+::: {.metric}
+<span class="value">2</span>
+<span class="label">publications</span>
+:::
+:::
+
+## Narrative Cards
+
+::: {.two-column}
+::: {.brand-card}
+### Engineering
+
+Use this card for architectural claims, roadmaps, and product strategy.
+The border and glow stay close to the website's hero cards.
+:::
+
+::: {.brand-card}
+### Research
+
+Pair concise text with technical details, equations, or examples without
+making the slide feel like a plain document.
+:::
+:::
+
+## Code
+
+```python
+def retrieve_then_generate(query, retriever, model):
+    context = retriever.search(query, top_k=5)
+    return model.generate(
+        system="Answer from the retrieved context.",
+        user={"query": query, "context": context},
+    )
+```
+
+## Callout
+
+::: {.callout-note}
+The theme intentionally uses system fonts and local SCSS so it remains fully
+open source and easy to fork.
+:::
+
+## Section Divider {.section-title}
+
+## Closing
+
+::: {.eyebrow}
+Ship the deck
+:::
+
+Use `format: edujbarrios-revealjs` after installing the extension with
+`quarto add edujbarrios/edujbarrios-slide`.
