@@ -1,7 +1,9 @@
 ---
 title: "Open Source AI Systems"
 subtitle: "A branded Quarto starter deck"
-author: "Eduardo J. Barrios"
+author:
+  - name: "Eduardo J. Barrios"
+    email: "edujbarrios@users.noreply.github.com"
 date: "2026-06-29"
 format:
   edujbarrios-revealjs:
