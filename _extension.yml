@@ -1,0 +1,18 @@
+title: Edujbarrios Revealjs
+author: Eduardo J. Barrios
+version: 0.1.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    revealjs:
+      theme: [default, edujbarrios.scss]
+      slide-number: c/t
+      show-slide-number: all
+      chalkboard: false
+      preview-links: auto
+      code-copy: true
+      code-overflow: wrap
+      highlight-style: github-dark
+      transition: fade
+      background-transition: fade
+

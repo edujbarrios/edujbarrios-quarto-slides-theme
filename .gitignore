@@ -1,0 +1,8 @@
+/.quarto/
+/_site/
+/.Rproj.user/
+*.html
+*.log
+*.tmp
+*.bak
+
