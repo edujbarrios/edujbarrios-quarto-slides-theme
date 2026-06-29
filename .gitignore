@@ -3,6 +3,9 @@
 /example_files/
 /_pptx_extract/
 /assets/extracted/
+/tfm_maverick.qmd
+/tfm_maverick.html
+/tfm_maverick_files/
 /.Rproj.user/
 *.pptx
 *.html
