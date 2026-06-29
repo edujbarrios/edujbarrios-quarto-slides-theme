@@ -1,6 +1,6 @@
 ---
-title: "Open Source AI Systems"
-subtitle: "A branded Quarto starter deck"
+title: "Neural Audio Theory"
+subtitle: "Engineering foundations for AI music generation"
 author:
   - name: "Eduardo J. Barrios"
     email: "edujbarrios@users.noreply.github.com"
@@ -14,94 +14,203 @@ format:
     code-copy: true
 ---
 
-## Why This Theme?
+## Neural Audio Theory
 
 ::: {.eyebrow}
-edujbarrios.com inspired
+Product presentation example
 :::
 
-This deck turns the site branding into a reusable **open-source Quarto theme**:
-dark surfaces, <span class="accent">turquoise signals</span>,
-<span class="violet">violet depth</span>, and
-<span class="orange">warm highlights</span>.
+**Neural Audio Theory** is an open-source documentation product for people who
+want to understand how modern AI music systems are built, from signal
+processing to transformers, diffusion models, prompt conditioning, and
+evaluation.
+
+[neural-audio-theory.vercel.app](https://neural-audio-theory.vercel.app/) ·
+[github.com/edujbarrios/neural-audio-theory](https://github.com/edujbarrios/neural-audio-theory)
 
 ::: {.tag-list}
 ::: {.tag}
-Revealjs
-:::
-::: {.tag}
-Quarto
-:::
-::: {.tag}
-MIT
+AI Music
 :::
 ::: {.tag}
 Open Source
 :::
+::: {.tag}
+Documentation
 :::
-
-## Project Snapshot
-
-::: {.three-column}
-::: {.metric}
-<span class="value">10+</span>
-<span class="label">AI projects</span>
-:::
-
-::: {.metric}
-<span class="value">3+</span>
-<span class="label">LLM systems</span>
-:::
-
-::: {.metric}
-<span class="value">2</span>
-<span class="label">publications</span>
+::: {.tag}
+Engineering Education
 :::
 :::
 
-## Narrative Cards
+## The Problem
 
 ::: {.two-column}
 ::: {.brand-card}
-### Engineering
+### AI music is accessible
 
-Use this card for architectural claims, roadmaps, and product strategy.
-The border and glow stay close to the website's hero cards.
+Creators can generate full tracks with prompt-based tools, but the underlying
+systems often feel like black boxes.
 :::
 
 ::: {.brand-card}
-### Research
+### The theory is scattered
 
-Pair concise text with technical details, equations, or examples without
-making the slide feel like a plain document.
+Audio DSP, embeddings, training losses, model architecture, ethics, and creator
+workflows usually live in separate resources.
 :::
 :::
 
-## Code
-
-```python
-def retrieve_then_generate(query, retriever, model):
-    context = retriever.search(query, top_k=5)
-    return model.generate(
-        system="Answer from the retrieved context.",
-        user={"query": query, "context": context},
-    )
-```
-
-## Callout
-
-::: {.callout-note}
-The theme intentionally uses system fonts and local SCSS so it remains fully
-open source and easy to fork.
-:::
-
-## Section Divider {.section-title}
-
-## Closing
+## The Product
 
 ::: {.eyebrow}
-Ship the deck
+Learn how the machine hears
 :::
 
-Use `format: edujbarrios-revealjs` after installing the extension with
-`quarto add edujbarrios/edujbarrios-slide`.
+Neural Audio Theory packages the field as a structured learning website:
+
+- **Engineering-focused documentation** for FFTs, embedding geometry, losses,
+  and generation pipelines
+- **Architecture guides** for transformers, diffusion models, VAEs, GANs, and
+  U-Nets in audio
+- **Creator-facing workflows** for prompting, production, troubleshooting,
+  mixing, stems, and vocals
+- **Responsible-use material** covering copyright, training data, and ethical
+  deployment
+
+## Audience
+
+::: {.three-column}
+::: {.metric}
+<span class="value">01</span>
+<span class="label">developers</span>
+:::
+
+::: {.metric}
+<span class="value">02</span>
+<span class="label">researchers</span>
+:::
+
+::: {.metric}
+<span class="value">03</span>
+<span class="label">technical creators</span>
+:::
+:::
+
+::: {.brand-card}
+The repository is intentionally aimed at developers, researchers, and
+technically-minded contributors. The live website is the learning surface; the
+repo is the source, configuration, and content architecture behind it.
+:::
+
+## Learning Journey
+
+::: {.two-column}
+::: {.compact-card}
+### Beginner to practical
+
+Introduction, beginner explanations, Suno prompting, ethics, legal context,
+producer workflows, tools, APIs, and AI music agents.
+:::
+
+::: {.compact-card}
+### Technical to research-level
+
+Audio fundamentals, representations, embeddings, model zoo, mathematics,
+architecture, training, evaluation, and advanced multimodal generation.
+:::
+:::
+
+## Feature Map
+
+::: {.three-column}
+::: {.brand-card}
+### Docs
+
+Docusaurus-powered content with a 16-section sidebar from intro to glossary.
+:::
+
+::: {.brand-card}
+### Math
+
+KaTeX rendering for signal-processing and model-training explanations.
+:::
+
+::: {.brand-card}
+### Interactivity
+
+React components for latent space visualization and prompt constructor
+utilities.
+:::
+:::
+
+## Technology
+
+| Layer | Choice |
+|---|---|
+| Documentation | Docusaurus 3.10 |
+| UI | React 19 |
+| Language | TypeScript 6 |
+| Math | remark-math, rehype-katex, KaTeX |
+| Hosting target | Static site on Vercel |
+| License | MIT |
+
+## Developer Workflow
+
+```bash
+git clone https://github.com/edujbarrios/neural-audio-theory.git
+cd neural-audio-theory
+npm install
+npm start
+npm run typecheck
+npm run build
+```
+
+## Positioning
+
+::: {.section-title}
+## Sure, you drop AI tracks. Now learn how they actually work.
+:::
+
+## Why It Matters
+
+::: {.two-column}
+::: {.brand-card}
+### For builders
+
+Move from prompt experimentation to system understanding: representations,
+conditioning, orchestration, evaluation, and deployment tradeoffs.
+:::
+
+::: {.brand-card}
+### For creators
+
+Translate creative goals into better technical intuition around prompts, stems,
+mixes, vocals, and generated audio behavior.
+:::
+:::
+
+## Open Source Invitation
+
+::: {.eyebrow}
+Contribute the next page
+:::
+
+The project is built as an open-source educational documentation site. Good
+contributions can be new pages, clearer explanations, interactive components,
+bug reports, or improved references.
+
+::: {.tag-list}
+::: {.tag}
+MIT License
+:::
+::: {.tag}
+Docusaurus
+:::
+::: {.tag}
+TypeScript
+:::
+::: {.tag}
+AI Audio
+:::
+:::

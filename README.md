@@ -46,7 +46,8 @@ The theme includes a small utility vocabulary:
 - `.two-column`, `.three-column`: responsive layout helpers
 - `.accent`, `.violet`, `.orange`, `.muted`: brand color helpers
 
-See `example.qmd` for a complete starter deck.
+See `example.qmd` for a complete product-style deck based on
+[`edujbarrios/neural-audio-theory`](https://github.com/edujbarrios/neural-audio-theory).
 
 ## License
 
