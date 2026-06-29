@@ -1,7 +1,10 @@
 /.quarto/
 /_site/
 /example_files/
+/_pptx_extract/
+/assets/extracted/
 /.Rproj.user/
+*.pptx
 *.html
 *.log
 *.tmp
