@@ -1,4 +1,4 @@
-name: Render and publish example
+name: Render example
 
 on:
   pull_request:
@@ -7,11 +7,8 @@ on:
       - master
       - main
 
-permissions:
-  contents: read
-
 jobs:
-  build:
+  render:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -22,31 +19,3 @@ jobs:
 
       - name: Render example deck
         run: quarto render example.qmd
-
-      - name: Prepare Pages artifact
-        run: |
-          mkdir public
-          cp example.html public/index.html
-          if [ -d example_files ]; then cp -R example_files public/example_files; fi
-          touch public/.nojekyll
-
-      - name: Upload Pages artifact
-        if: github.event_name == 'push'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-
-  deploy:
-    if: github.event_name == 'push'
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
