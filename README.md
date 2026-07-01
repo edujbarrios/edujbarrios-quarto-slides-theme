@@ -1,8 +1,20 @@
 # edujbarrios Quarto Revealjs Theme
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-40e0d0.svg)](LICENSE)
+[![Quarto](https://img.shields.io/badge/Quarto-%3E%3D1.4.0-8b5cf6.svg)](https://quarto.org/)
+
 An open-source Quarto presentation theme based on the visual branding of
 [edujbarrios.com](https://edujbarrios.com/): dark charcoal surfaces, turquoise
 signals, violet depth, and warm orange highlights.
+
+![Example deck title slide](assets/example-slide.png)
+
+## Features
+
+- Revealjs format extension for Quarto presentations
+- Dark brand palette with turquoise, violet, and orange accents
+- Utility classes for cards, metric tiles, tags, section titles, and columns
+- Sensible defaults for code blocks, slide numbers, transitions, and links
 
 ## Palette
 
@@ -34,6 +46,9 @@ For local development in this repository, render the included example:
 ```bash
 quarto render example.qmd
 ```
+
+The rendered `example.html` and supporting files are generated artifacts and are
+not committed to the repository.
 
 ## Slide Helpers
 
