@@ -25,7 +25,7 @@ want to understand how modern AI music systems are built, from signal
 processing to transformers, diffusion models, prompt conditioning, and
 evaluation.
 
-[neural-audio-theory.vercel.app](https://neural-audio-theory.vercel.app/) ·
+[neural-audio-theory.vercel.app](https://neural-audio-theory.vercel.app/) |
 [github.com/edujbarrios/neural-audio-theory](https://github.com/edujbarrios/neural-audio-theory)
 
 ::: {.tag-list}
