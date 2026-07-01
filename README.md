@@ -1,4 +1,4 @@
-# edujbarrios Quarto Revealjs Theme
+# edujbarrios Quarto Slides Theme
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-40e0d0.svg)](LICENSE)
 [![Quarto](https://img.shields.io/badge/Quarto-%3E%3D1.4.0-8b5cf6.svg)](https://quarto.org/)
@@ -7,7 +7,20 @@ An open-source Quarto presentation theme based on the visual branding of
 [edujbarrios.com](https://edujbarrios.com/): dark charcoal surfaces, turquoise
 signals, violet depth, and warm orange highlights.
 
-![Example deck title slide](assets/example-slide.png)
+## Preview
+
+![Example deck title slide](assets/example-cover-slide.png)
+
+![Example deck structure slide](assets/example-structure-slide.png)
+
+## Demo
+
+The example deck is published with GitHub Pages at:
+
+<https://edujbarrios.github.io/edujbarrios-quarto-slides-theme/>
+
+Pushes to `master` or `main` render `example.qmd` and deploy the result as
+`index.html`.
 
 ## Features
 
@@ -20,16 +33,19 @@ signals, violet depth, and warm orange highlights.
 
 The theme mirrors the current site identity:
 
-- `#40e0d0` turquoise: primary signal and links
-- `#008080` teal: light-mode accent reference from the site
-- `#8b5cf6` / `#a78bfa` violet: secondary depth and gradients
-- `#fb923c` orange: warm highlight
-- `#0b0f14`, `#111827`, `#1b1b1d`: dark presentation surfaces
+![Turquoise primary signal](https://img.shields.io/badge/turquoise-primary_signal-40e0d0?style=for-the-badge)
+![Teal accent reference](https://img.shields.io/badge/teal-accent_reference-008080?style=for-the-badge)
+![Violet secondary depth](https://img.shields.io/badge/violet-secondary_depth-8b5cf6?style=for-the-badge)
+![Violet soft gradient](https://img.shields.io/badge/violet_soft-gradient-a78bfa?style=for-the-badge)
+![Orange warm highlight](https://img.shields.io/badge/orange-warm_highlight-fb923c?style=for-the-badge)
+![Canvas dark surface](https://img.shields.io/badge/canvas-dark_surface-0b0f14?style=for-the-badge)
+![Surface dark panel](https://img.shields.io/badge/surface-dark_panel-111827?style=for-the-badge)
+![Surface 2 dark depth](https://img.shields.io/badge/surface_2-dark_depth-1b1b1d?style=for-the-badge)
 
 ## Install
 
 ```bash
-quarto add edujbarrios/edujbarrios-slide
+quarto add edujbarrios/edujbarrios-quarto-slides-theme
 ```
 
 ## Use
