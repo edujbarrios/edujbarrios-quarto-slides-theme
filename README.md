@@ -9,18 +9,7 @@ signals, violet depth, and warm orange highlights.
 
 ## Preview
 
-![Example deck title slide](assets/example-cover-slide.png)
-
-![Example deck structure slide](assets/example-structure-slide.png)
-
-## Demo
-
-The example deck is published with GitHub Pages at:
-
-<https://edujbarrios.github.io/edujbarrios-quarto-slides-theme/>
-
-Pushes to `master` or `main` render `example.qmd` and deploy the result as
-`index.html`.
+![Example presentation theme preview](assets/example-preview.png)
 
 ## Features
 
